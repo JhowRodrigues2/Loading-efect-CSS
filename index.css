@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transform: scale(
+    3
+  ); /* propriedade que aumenta o tamanho do body, fazendo assim aumentar tamanho da div.*/
+}
+.loader {
+  animation: loading 2s linear infinite;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #e5e5e5;
+  border-top-color: #915c;
+  border-radius: 50%;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
